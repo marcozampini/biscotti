@@ -1,16 +1,14 @@
 // App.js
 
 import './App.css'
+import Ingredient from './components/Ingredient'
 
 function App() {
   return (
     <div className="App">
       <h1>Biscotti cioccolato e mirtilli</h1>
       <table>
-        <tr>
-          <td>Uova</td>
-          <td>167 g</td>
-        </tr>
+        <Ingredient description="Uova" quantity="60" />
         <tr>
           <td>Cioccolato</td>
           <td>139 g</td>
