@@ -9,19 +9,17 @@ function App() {
   return (
     <div className="App">
       <h1>{recipes[0].description}</h1>
-      <table>
-        <tbody>
-          {recipes[0].ingredients.map((ingredient) => {
-            return (
-              <Ingredient
-                key={ingredient._id}
-                description={ingredient.description}
-                quantity={ingredient.quantity}
-              />
-            )
-          })}
-        </tbody>
-      </table>
+      <form className="recipe">
+        {recipes[0].ingredients.map((ingredient) => {
+          return (
+            <Ingredient
+              key={ingredient._id}
+              description={ingredient.description}
+              quantity={ingredient.quantity}
+            />
+          )
+        })}
+      </form>
     </div>
   )
 }

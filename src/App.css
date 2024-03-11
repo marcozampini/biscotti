@@ -9,15 +9,14 @@ h1 {
   font-size: 3.8rem;
   padding: 5rem;
 }
-table {
-  width: 100%;
+.recipe {
   font-size: 3.5rem;
   padding: 5rem;
 }
-tr:nth-child(even) {
-  background-color: #eeeeee;
-}
-td {
+.ingredient {
   height: 8rem;
   padding: 1rem;
+}
+.ingredient:nth-child(even) {
+  background-color: #eeeeee;
 }
