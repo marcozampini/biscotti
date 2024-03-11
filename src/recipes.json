@@ -1,0 +1,26 @@
+[
+  {
+    "_id": "rec-0",
+    "description": "Biscotti cioccolato e mirtilli",
+    "ingredients": [
+      { "_id": "ing-0", "description": "Uova", "quantity": 60 },
+      { "_id": "ing-1", "description": "Cioccolato", "quantity": 50 },
+      { "_id": "ing-2", "description": "Cacao", "quantity": 10 },
+      { "_id": "ing-3", "description": "Mirtilli", "quantity": 60 },
+      { "_id": "ing-4", "description": "Eritritolo", "quantity": 20 },
+      { "_id": "ing-5", "description": "Burro", "quantity": 50 },
+      { "_id": "ing-6", "description": "Farina", "quantity": 140 },
+      { "_id": "ing-7", "description": "Lievito", "quantity": 0 },
+      { "_id": "ing-8", "description": "Sale", "quantity": 0 }
+    ]
+  },
+  {
+    "_id": "rec-1",
+    "description": "Biscotti alla nocciola",
+    "ingredients": [
+      { "_id": "ing-0", "description": "Uova", "quantity": 60 },
+      { "_id": "ing-1", "description": "Nocciole", "quantity": 50 },
+      { "_id": "ing-2", "description": "Zucchero di canna", "quantity": 50 }
+    ]
+  }
+]
