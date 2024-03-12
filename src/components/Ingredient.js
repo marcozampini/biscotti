@@ -1,11 +1,13 @@
-import React, { useState } from 'react'
-
 function Ingredient(props) {
-  const [quantity, setQuantity] = useState(props.quantity)
   return (
     <div className="ingredient">
-      <label>{props.description}</label>
-      <input type="number" name={props.name} value={quantity} />
+      <label htmlFor={props.name}>{props.description}</label>
+      <input
+        type="number"
+        id={props.name}
+        value={props.quantity}
+        onChange={(e) => props.onChange(parseFloat(e.target.value))}
+      />
     </div>
   )
 }
