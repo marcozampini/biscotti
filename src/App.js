@@ -4,6 +4,7 @@ import './App.css'
 import React, { useState } from 'react'
 
 import Ingredient from './components/Ingredient'
+import IngredientWithoutWeight from './components/IngredientWithoutWeight'
 
 import recipes from './recipes.json'
 
@@ -47,6 +48,15 @@ function App() {
               onChange={(newQuantity) =>
                 handleIngredientChange(index, newQuantity)
               }
+            />
+          )
+        })}
+        {recipes[0].ingredientsWithoutWeight.map((ingredient, index) => {
+          return (
+            <IngredientWithoutWeight
+              key={ingredient._id}
+              description={ingredient.description}
+              quantity={ingredient.quantity}
             />
           )
         })}

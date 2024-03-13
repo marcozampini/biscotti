@@ -39,14 +39,21 @@
         "name": "flour",
         "description": "Farina",
         "quantity": 140
-      },
+      }
+    ],
+    "ingredientsWithoutWeight": [
       {
-        "_id": "ing-7",
+        "_id": "ingww-0",
         "name": "yeast",
         "description": "Lievito",
-        "quantity": 0
+        "quantity": "q. b."
       },
-      { "_id": "ing-8", "name": "salt", "description": "Sale", "quantity": 0 }
+      {
+        "_id": "ingww-1",
+        "name": "salt",
+        "description": "Sale",
+        "quantity": "q. b."
+      }
     ]
   },
   {
