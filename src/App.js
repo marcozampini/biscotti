@@ -28,7 +28,7 @@ function App() {
     setIngredientQuantities(newQuantities)
   }
 
-  const handleSubmit = (e) => {
+  const handleReset = (e) => {
     e.preventDefault()
     setIngredientQuantities(initialQuantities)
   }
@@ -36,7 +36,7 @@ function App() {
   return (
     <div className="App">
       <h1>{recipes[0].description}</h1>
-      <form className="recipe" onSubmit={handleSubmit}>
+      <form className="recipe">
         {recipes[0].ingredients.map((ingredient, index) => {
           return (
             <Ingredient
@@ -50,7 +50,9 @@ function App() {
             />
           )
         })}
-        <button type="submit">Reset</button>
+        <button type="reset" onClick={handleReset}>
+          Reset
+        </button>
       </form>
     </div>
   )

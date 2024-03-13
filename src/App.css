@@ -28,7 +28,7 @@ h1 {
   font-size: 1.2rem;
   max-width: 4rem;
 }
-button[type='submit'] {
+button[type='reset'] {
   display: block;
   margin: 1rem auto;
   padding: 0.5rem 1rem;
