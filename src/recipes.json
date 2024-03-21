@@ -1,7 +1,8 @@
 [
   {
     "_id": "rec-0",
-    "description": "Biscotti cioccolato e mirtilli",
+    "title": "Biscotti cioccolato e mirtilli",
+    "slug": "biscotti-cioccolato-e-mirtilli",
     "ingredients": [
       { "_id": "ing-0", "name": "eggs", "description": "Uova", "quantity": 60 },
       {
@@ -58,11 +59,38 @@
   },
   {
     "_id": "rec-1",
-    "description": "Biscotti alla nocciola",
+    "title": "Biscotti alla nocciola",
+    "slug": "biscotti-alla-nocciola",
     "ingredients": [
       { "_id": "ing-0", "description": "Uova", "quantity": 60 },
-      { "_id": "ing-1", "description": "Nocciole", "quantity": 50 },
-      { "_id": "ing-2", "description": "Zucchero di canna", "quantity": 50 }
+      { "_id": "ing-1", "description": "Nocciole o mandorle", "quantity": 50 },
+      { "_id": "ing-2", "description": "Zucchero di canna", "quantity": 50 },
+      {
+        "_id": "ing-3",
+        "name": "butter",
+        "description": "Burro",
+        "quantity": 40
+      },
+      {
+        "_id": "ing-4",
+        "name": "flour",
+        "description": "Farina",
+        "quantity": 140
+      }
+    ],
+    "ingredientsWithoutWeight": [
+      {
+        "_id": "ingww-0",
+        "name": "yeast",
+        "description": "Lievito",
+        "quantity": "q. b."
+      },
+      {
+        "_id": "ingww-1",
+        "name": "salt",
+        "description": "Sale",
+        "quantity": "q. b."
+      }
     ]
   }
 ]

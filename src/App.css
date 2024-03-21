@@ -10,7 +10,7 @@ h1 {
   font-size: 1.5rem;
   padding: 1rem;
 }
-.recipe {
+.recipe-form {
   font-size: 1rem;
   padding: 0 0.5rem;
 }
@@ -40,9 +40,14 @@ input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
+.recipe-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 1rem;
+}
 button[type='reset'] {
   display: block;
-  margin: 1rem auto;
   padding: 0.5rem 1rem;
   border-radius: 0.5rem;
   font-size: 1.2rem;
@@ -54,8 +59,8 @@ button[type='reset'] {
   h1 {
     font-size: 2.5rem;
   }
-  .recipe {
-    width: 50rem;
+  .recipe-form {
+    width: 36rem;
     margin: 0 auto;
     padding: 0;
   }
