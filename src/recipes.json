@@ -62,9 +62,19 @@
     "title": "Biscotti alla nocciola",
     "slug": "biscotti-alla-nocciola",
     "ingredients": [
-      { "_id": "ing-0", "description": "Uova", "quantity": 60 },
-      { "_id": "ing-1", "description": "Nocciole o mandorle", "quantity": 50 },
-      { "_id": "ing-2", "description": "Zucchero di canna", "quantity": 50 },
+      { "_id": "ing-0", "name": "eggs", "description": "Uova", "quantity": 60 },
+      {
+        "_id": "ing-1",
+        "name": "hazelnuts",
+        "description": "Nocciole o mandorle",
+        "quantity": 50
+      },
+      {
+        "_id": "ing-2",
+        "name": "brown-sugar",
+        "description": "Zucchero di canna",
+        "quantity": 50
+      },
       {
         "_id": "ing-3",
         "name": "butter",
@@ -73,6 +83,58 @@
       },
       {
         "_id": "ing-4",
+        "name": "flour",
+        "description": "Farina",
+        "quantity": 142
+      }
+    ],
+    "ingredientsWithoutWeight": [
+      {
+        "_id": "ingww-0",
+        "name": "yeast",
+        "description": "Lievito",
+        "quantity": "q. b."
+      },
+      {
+        "_id": "ingww-1",
+        "name": "salt",
+        "description": "Sale",
+        "quantity": "q. b."
+      }
+    ]
+  },
+  {
+    "_id": "rec-2",
+    "title": "Biscotti per le mie bambine (datteri e uvetta)",
+    "slug": "biscotti-per-le-mie-bambine-datteri-e-uvetta",
+    "ingredients": [
+      { "_id": "ing-0", "name": "eggs", "description": "Uova", "quantity": 60 },
+      {
+        "_id": "ing-1",
+        "name": "raisins",
+        "description": "Uvetta",
+        "quantity": 30
+      },
+      {
+        "_id": "ing-2",
+        "name": "date-paste",
+        "description": "Pasta di datteri",
+        "quantity": 50
+      },
+      {
+        "_id": "ing-3",
+        "name": "sunflower-seeds",
+        "description": "Semi di girasole",
+        "quantity": 25
+      },
+      {
+        "_id": "ing-4",
+        "name": "butter",
+        "description": "Burro",
+        "quantity": 40
+      },
+      {
+        "_id": "ing-5",
         "name": "flour",
         "description": "Farina",
         "quantity": 140
