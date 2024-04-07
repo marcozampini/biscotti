@@ -105,6 +105,64 @@
   },
   {
     "_id": "rec-2",
+    "title": "Biscotti cocco e cioccolato",
+    "slug": "biscotti-cocco-e-cioccolato",
+    "ingredients": [
+      { "_id": "ing-0", "name": "eggs", "description": "Uova", "quantity": 60 },
+      {
+        "_id": "ing-1",
+        "name": "coconut-flour",
+        "description": "Farina di cocco",
+        "quantity": 25
+      },
+      {
+        "_id": "ing-2",
+        "name": "hazelnuts",
+        "description": "Nocciole",
+        "quantity": 25
+      },
+      {
+        "_id": "ing-3",
+        "name": "brown-sugar",
+        "description": "Zucchero di canna",
+        "quantity": 30
+      },
+      {
+        "_id": "ing-4",
+        "name": "chocolate",
+        "description": "Cioccolato",
+        "quantity": 50
+      },
+      {
+        "_id": "ing-5",
+        "name": "butter",
+        "description": "Burro",
+        "quantity": 40
+      },
+      {
+        "_id": "ing-5",
+        "name": "flour",
+        "description": "Farina",
+        "quantity": 140
+      }
+    ],
+    "ingredientsWithoutWeight": [
+      {
+        "_id": "ingww-0",
+        "name": "yeast",
+        "description": "Lievito",
+        "quantity": "q. b."
+      },
+      {
+        "_id": "ingww-1",
+        "name": "salt",
+        "description": "Sale",
+        "quantity": "q. b."
+      }
+    ]
+  },
+  {
+    "_id": "rec-3",
     "title": "Biscotti per le mie bambine (datteri e uvetta)",
     "slug": "biscotti-per-le-mie-bambine-datteri-e-uvetta",
     "ingredients": [
