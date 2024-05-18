@@ -85,7 +85,7 @@
         "_id": "ing-4",
         "name": "flour",
         "description": "Farina",
-        "quantity": 142
+        "quantity": 144
       }
     ],
     "ingredientsWithoutWeight": [
@@ -209,6 +209,64 @@
         "_id": "ingww-1",
         "name": "salt",
         "description": "Sale",
+        "quantity": "q. b."
+      }
+    ]
+  },
+  {
+    "_id": "rec-4",
+    "title": "Gocciole",
+    "slug": "Gocciole",
+    "ingredients": [
+      { "_id": "ing-0", "name": "eggs", "description": "Uova", "quantity": 60 },
+      {
+        "_id": "ing-1",
+        "name": "butter",
+        "description": "Burro",
+        "quantity": 80
+      },
+      {
+        "_id": "ing-2",
+        "name": "flour",
+        "description": "Farina 00",
+        "quantity": 170
+      },
+      {
+        "_id": "ing-3",
+        "name": "powdered-sugar",
+        "description": "Zucchero a velo",
+        "quantity": 80
+      },
+      {
+        "_id": "ing-4",
+        "name": "potato-starch",
+        "description": "Fecola di patate",
+        "quantity": 50
+      },
+      {
+        "_id": "ing-5",
+        "name": "cocoa",
+        "description": "Cacao amaro in polvere",
+        "quantity": 3
+      },
+      {
+        "_id": "ing-6",
+        "name": "chocolate-chips",
+        "description": "Gocce di cioccolato",
+        "quantity": 30
+      },
+      {
+        "_id": "ing-7",
+        "name": "yeast",
+        "description": "Lievito disidratato per dolci",
+        "quantity": 4
+      }
+    ],
+    "ingredientsWithoutWeight": [
+      {
+        "_id": "ingww-0",
+        "name": "vanilla-extract",
+        "description": "Estratto di vaniglia",
         "quantity": "q. b."
       }
     ]
