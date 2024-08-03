@@ -270,5 +270,50 @@
         "quantity": "q. b."
       }
     ]
+  },
+  {
+    "_id": "rec-5",
+    "title": "Biscotti al sesamo",
+    "slug": "biscotti-al-sesamo",
+    "ingredients": [
+      {
+        "_id": "ing-0",
+        "name": "brown-sugar",
+        "description": "Zucchero di canna",
+        "quantity": 60
+      },
+      {
+        "_id": "ing-1",
+        "name": "butter",
+        "description": "Burro",
+        "quantity": 100
+      },
+      {
+        "_id": "ing-2",
+        "name": "flour",
+        "description": "Farina",
+        "quantity": 200
+      }
+    ],
+    "ingredientsWithoutWeight": [
+      {
+        "_id": "ingww-0",
+        "name": "yeast",
+        "description": "Lievito",
+        "quantity": "q. b."
+      },
+      {
+        "_id": "ingww-1",
+        "name": "salt",
+        "description": "Sale",
+        "quantity": "q. b."
+      },
+      {
+        "_id": "ingww-2",
+        "name": "sesame-seeds",
+        "description": "Semi di sesamo",
+        "quantity": "q. b."
+      }
+    ]
   }
 ]
