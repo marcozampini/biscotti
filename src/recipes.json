@@ -315,5 +315,56 @@
         "quantity": "q. b."
       }
     ]
+  },
+  {
+    "_id": "rec-6",
+    "title": "Pastafrolla con poco zucchero e poco burro",
+    "slug": "low-sugar-low-butter-pastafrolla",
+    "ingredients": [
+      {
+        "_id": "ing-0",
+        "name": "eggs",
+        "description": "Uova",
+        "quantity": 140
+      },
+      {
+        "_id": "ing-1",
+        "name": "brown-sugar",
+        "description": "Zucchero di canna",
+        "quantity": 80
+      },
+      {
+        "_id": "ing-2",
+        "name": "butter",
+        "description": "Burro",
+        "quantity": 80
+      },
+      {
+        "_id": "ing-3",
+        "name": "flour",
+        "description": "Farina",
+        "quantity": 300
+      }
+    ],
+    "ingredientsWithoutWeight": [
+      {
+        "_id": "ingww-0",
+        "name": "yeast",
+        "description": "Lievito",
+        "quantity": "q. b."
+      },
+      {
+        "_id": "ingww-1",
+        "name": "salt",
+        "description": "Sale",
+        "quantity": "q. b."
+      },
+      {
+        "_id": "ingww-2",
+        "name": "lemon-peel",
+        "description": "Scorza di limone",
+        "quantity": "q. b."
+      }
+    ]
   }
 ]
