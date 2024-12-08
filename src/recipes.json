@@ -366,5 +366,56 @@
         "quantity": "q. b."
       }
     ]
+  },
+  {
+    "_id": "rec-7",
+    "title": "Fogassa sula gradela",
+    "slug": "fogassa-sula-gradela",
+    "ingredients": [
+      {
+        "_id": "ing-0",
+        "name": "olive-oil",
+        "description": "Olio di oliva",
+        "quantity": 300
+      },
+      {
+        "_id": "ing-1",
+        "name": "white-wine",
+        "description": "Vino bianco",
+        "quantity": 300
+      },
+      {
+        "_id": "ing-2",
+        "name": "brown-sugar",
+        "description": "Zucchero di canna",
+        "quantity": 150
+      },
+      {
+        "_id": "ing-3",
+        "name": "white-flour",
+        "description": "Farina bianca",
+        "quantity": 1000
+      }
+    ],
+    "ingredientsWithoutWeight": [
+      {
+        "_id": "ingww-0",
+        "name": "yeast",
+        "description": "Lievito",
+        "quantity": "q. b."
+      },
+      {
+        "_id": "ingww-1",
+        "name": "salt",
+        "description": "Sale",
+        "quantity": "q. b."
+      },
+      {
+        "_id": "ingww-2",
+        "name": "lemon-peel",
+        "description": "Scorza di limone",
+        "quantity": "q. b."
+      }
+    ]
   }
 ]
