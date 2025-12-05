@@ -469,5 +469,38 @@
         "quantity": "q. b."
       }
     ]
+  },
+  {
+    "_id": "rec-9",
+    "title": "Pasta brisée",
+    "slug": "pasta-brisee",
+    "ingredients": [
+      {
+        "_id": "ing-0",
+        "name": "white-flour",
+        "description": "Farina 00",
+        "quantity": 220
+      },
+      {
+        "_id": "ing-1",
+        "name": "water",
+        "description": "Acqua",
+        "quantity": 100
+      },
+      {
+        "_id": "ing-2",
+        "name": "olive-oil",
+        "description": "Olio di oliva",
+        "quantity": 50
+      }
+    ],
+    "ingredientsWithoutWeight": [
+      {
+        "_id": "ingww-0",
+        "name": "salt",
+        "description": "Sale",
+        "quantity": "q. b."
+      }
+    ]
   }
 ]
