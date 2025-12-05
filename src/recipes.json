@@ -216,7 +216,7 @@
   {
     "_id": "rec-4",
     "title": "Gocciole",
-    "slug": "Gocciole",
+    "slug": "gocciole",
     "ingredients": [
       { "_id": "ing-0", "name": "eggs", "description": "Uova", "quantity": 60 },
       {
@@ -273,6 +273,58 @@
   },
   {
     "_id": "rec-5",
+    "title": "Gocciole di papà",
+    "slug": "gocciole-di-papa",
+    "ingredients": [
+      { "_id": "ing-0", "name": "eggs", "description": "Uova", "quantity": 60 },
+      {
+        "_id": "ing-1",
+        "name": "butter",
+        "description": "Burro",
+        "quantity": 40
+      },
+      {
+        "_id": "ing-2",
+        "name": "brown-sugar",
+        "description": "Zucchero di canna",
+        "quantity": 40
+      },
+      {
+        "_id": "ing-3",
+        "name": "flour",
+        "description": "Farina",
+        "quantity": 144
+      },
+      {
+        "_id": "ing-4",
+        "name": "cocoa",
+        "description": "Cacao amaro in polvere",
+        "quantity": 5
+      },
+      {
+        "_id": "ing-5",
+        "name": "chocolate-chips",
+        "description": "Gocce di cioccolato o cioccolato a pezzetti",
+        "quantity": 40
+      }
+    ],
+    "ingredientsWithoutWeight": [
+      {
+        "_id": "ingww-0",
+        "name": "yeast",
+        "description": "Lievito",
+        "quantity": "q. b."
+      },
+      {
+        "_id": "ingww-1",
+        "name": "salt",
+        "description": "Sale",
+        "quantity": "q. b."
+      }
+    ]
+  },
+  {
+    "_id": "rec-6",
     "title": "Biscotti al sesamo",
     "slug": "biscotti-al-sesamo",
     "ingredients": [
@@ -317,7 +369,7 @@
     ]
   },
   {
-    "_id": "rec-6",
+    "_id": "rec-7",
     "title": "Pastafrolla con poco zucchero e poco burro",
     "slug": "low-sugar-low-butter-pastafrolla",
     "ingredients": [
@@ -368,7 +420,7 @@
     ]
   },
   {
-    "_id": "rec-7",
+    "_id": "rec-8",
     "title": "Fogassa sula gradela",
     "slug": "fogassa-sula-gradela",
     "ingredients": [
