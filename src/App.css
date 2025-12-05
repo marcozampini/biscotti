@@ -10,6 +10,15 @@ h1 {
   font-size: 1.5rem;
   padding: 1rem;
 }
+.recipes-list {
+  font-size: 1rem;
+  padding: 0 1rem;
+  list-style: none;
+}
+.recipes-list li {
+  display: block;
+  padding: 0 0 0.5rem 0;
+}
 .recipe-form {
   font-size: 1rem;
   padding: 0 0.5rem;
@@ -59,6 +68,7 @@ button[type='reset'] {
   h1 {
     font-size: 2.5rem;
   }
+  .recipes-list,
   .recipe-form {
     width: 36rem;
     margin: 0 auto;

@@ -8,7 +8,7 @@ function Home() {
   return (
     <div>
       <h1>Biscotti di Marco Zampini</h1>
-      <ul>
+      <ul className="recipes-list">
         {recipes.map((recipe, index) => {
           return (
             <li key={recipe._id}>
