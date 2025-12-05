@@ -11,13 +11,21 @@ h1 {
   padding: 1rem;
 }
 .recipes-list {
-  font-size: 1rem;
   padding: 0 1rem;
   list-style: none;
 }
 .recipes-list li {
+  font-size: 1.2rem;
   display: block;
   padding: 0 0 0.5rem 0;
+}
+.recipes-list li a,
+.recipes-list li a:visited {
+  color: chocolate;
+}
+.recipes-list li:nth-child(odd) a,
+.recipes-list li:nth-child(odd) a:visited {
+  color: darkgreen;
 }
 .recipe-form {
   font-size: 1rem;
