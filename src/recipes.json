@@ -345,6 +345,12 @@
         "name": "flour",
         "description": "Farina",
         "quantity": 200
+      },
+      {
+        "_id": "ing-3",
+        "name": "water",
+        "description": "Acqua",
+        "quantity": 20
       }
     ],
     "ingredientsWithoutWeight": [
