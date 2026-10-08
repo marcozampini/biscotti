@@ -6,7 +6,7 @@ function Ingredient(props) {
         type="number"
         id={props.name}
         value={props.quantity}
-        onChange={(e) => props.onChange(parseFloat(e.target.value))}
+        onChange={(e) => props.onChange(e.target.value)}
       />
     </div>
   )

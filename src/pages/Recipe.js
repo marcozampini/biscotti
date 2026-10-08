@@ -14,15 +14,19 @@ function Recipe(ind) {
   const [ingredientQuantities, setIngredientQuantities] =
     useState(initialQuantities)
 
-  const handleIngredientChange = (index, quantity) => {
+  const handleIngredientChange = (index, value) => {
     const newQuantities = [...ingredientQuantities]
-    const newRatio = quantity / initialQuantities[index]
+    newQuantities[index] = value
 
-    newQuantities[index] = quantity
-
-    for (let i = 0; i < newQuantities.length; i++) {
-      if (i !== index) {
-        newQuantities[i] = Number(initialQuantities[i] * newRatio).toFixed(0)
+    // Campo vuoto o valore non valido: mostra ciò che l'utente sta
+    // digitando senza ricalcolare gli altri ingredienti
+    const quantity = parseFloat(value)
+    if (quantity > 0) {
+      const newRatio = quantity / initialQuantities[index]
+      for (let i = 0; i < newQuantities.length; i++) {
+        if (i !== index) {
+          newQuantities[i] = Number(initialQuantities[i] * newRatio).toFixed(0)
+        }
       }
     }
     setIngredientQuantities(newQuantities)
