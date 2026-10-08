@@ -8,6 +8,12 @@ function Home() {
   return (
     <div>
       <h1>Biscotti di Marco Zampini</h1>
+      <p className="intro">
+        Scegli una ricetta,
+        <br />
+        inserisci il peso di un ingrediente
+        <br />e il resto si ricalcola da solo.
+      </p>
       <ul className="recipes-list">
         {recipes.map((recipe, index) => {
           return (
@@ -17,6 +23,9 @@ function Home() {
           )
         })}
       </ul>
+      <footer className="site-footer">
+        <a href="https://github.com/marcozampini/biscotti">Codice su GitHub</a>
+      </footer>
     </div>
   )
 }
