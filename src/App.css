@@ -36,19 +36,45 @@ h1 {
   justify-content: space-between;
   align-items: center;
   font-size: 1.2rem;
-  padding: 0 1rem;
+  padding: 0 1rem 0 0;
   height: 3rem;
 }
 .ingredient:nth-child(odd) {
   background-color: #eeeeee;
 }
-label.ingredient {
-  cursor: pointer;
-}
-.ingredient:focus-within {
+/* Highlight the row being edited (not when the checkbox has focus) */
+.ingredient:has(.ingredient-field input:focus) {
   background-color: #fbe3cc;
 }
-.ingredient input {
+.added-checkbox {
+  display: flex;
+  align-items: center;
+  align-self: stretch;
+  padding: 0 0.75rem 0 1rem;
+  cursor: pointer;
+}
+.added-checkbox input {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin: 0;
+  accent-color: darkgreen;
+  cursor: pointer;
+}
+.ingredient-field {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+}
+label.ingredient-field {
+  cursor: pointer;
+}
+.ingredient.added .ingredient-name {
+  text-decoration: line-through;
+  color: #777;
+}
+.ingredient-field input {
   font-size: 1.2rem;
   max-width: 5rem;
   height: 2.25rem;

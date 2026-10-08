@@ -11,7 +11,8 @@ Le ricette sono scritte per ingredienti "standard", ma l'uovo che hai in mano pe
 1. Dalla home scegli una ricetta.
 2. Scrivi il peso di un qualsiasi ingrediente: quello che hai davvero, non quello della ricetta.
 3. Le quantità degli altri ingredienti si aggiornano mantenendo le proporzioni originali, arrotondate al grammo.
-4. **Reset** riporta la ricetta alle dosi di partenza.
+4. Mentre prepari l'impasto, spunta la casella accanto a ogni ingrediente che hai già messo: il nome viene barrato, così vedi subito cosa manca.
+5. **Reset** riporta la ricetta alle dosi di partenza e toglie tutte le spunte.
 
 Gli ingredienti senza peso (lievito, sale, "q. b.") restano in fondo alla ricetta e non vengono ricalcolati.
 

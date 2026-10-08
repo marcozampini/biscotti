@@ -13,6 +13,8 @@ function Recipe(ind) {
   )
   const [ingredientQuantities, setIngredientQuantities] =
     useState(initialQuantities)
+  // _id of the ingredients already added to the dough
+  const [addedIngredients, setAddedIngredients] = useState([])
 
   const handleIngredientChange = (index, value) => {
     const newQuantities = [...ingredientQuantities]
@@ -32,9 +34,16 @@ function Recipe(ind) {
     setIngredientQuantities(newQuantities)
   }
 
+  const handleAddedToggle = (id) => {
+    setAddedIngredients((added) =>
+      added.includes(id) ? added.filter((i) => i !== id) : [...added, id]
+    )
+  }
+
   const handleReset = (e) => {
     e.preventDefault()
     setIngredientQuantities(initialQuantities)
+    setAddedIngredients([])
   }
   return (
     <div className="recipe">
@@ -51,6 +60,8 @@ function Recipe(ind) {
               onChange={(newQuantity) =>
                 handleIngredientChange(index, newQuantity)
               }
+              added={addedIngredients.includes(ingredient._id)}
+              onToggle={() => handleAddedToggle(ingredient._id)}
             />
           )
         })}
@@ -60,6 +71,8 @@ function Recipe(ind) {
               key={ingredient._id}
               description={ingredient.description}
               quantity={ingredient.quantity}
+              added={addedIngredients.includes(ingredient._id)}
+              onToggle={() => handleAddedToggle(ingredient._id)}
             />
           )
         })}
