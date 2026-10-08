@@ -4,7 +4,7 @@ import React, { useState } from 'react'
 import Ingredient from '../components/Ingredient'
 import IngredientWithoutWeight from '../components/IngredientWithoutWeight'
 
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router'
 import recipes from '../recipes.json'
 function Recipe(ind) {
   const recipe = recipes[ind.index]

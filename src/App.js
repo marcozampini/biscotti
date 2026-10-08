@@ -2,7 +2,7 @@
 
 import './App.css'
 import React from 'react'
-import { Routes, Route } from 'react-router-dom'
+import { Routes, Route } from 'react-router'
 
 import recipes from './recipes.json'
 import Home from './pages/Home'
