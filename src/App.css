@@ -42,20 +42,21 @@ h1 {
 .ingredient:nth-child(odd) {
   background-color: #eeeeee;
 }
-.ingredient input[type='number'] {
+label.ingredient {
+  cursor: pointer;
+}
+.ingredient:focus-within {
+  background-color: #fbe3cc;
+}
+.ingredient input {
   font-size: 1.2rem;
   max-width: 5rem;
+  height: 2.25rem;
   padding: 0 0.5rem;
   text-align: right;
-  -moz-appearance: textfield;
 }
 .ingredient .quantity-description {
   padding: 0 0.5rem;
-}
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
 }
 .recipe-buttons {
   display: flex;
