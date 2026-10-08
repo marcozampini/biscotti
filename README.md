@@ -1,70 +1,63 @@
-# Getting Started with Create React App
+# Biscotti
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+_E se le uova non pesassero 60 grammi?_
 
-## Available Scripts
+Le ricette sono scritte per ingredienti "standard", ma l'uovo che hai in mano pesa 53 grammi, o ti sono rimasti solo 80 grammi di burro. Biscotti è una piccola web app con le mie ricette di biscotti (e qualche impasto di casa): inserisci il peso reale di un ingrediente e tutti gli altri si ricalcolano in proporzione.
 
-In the project directory, you can run:
+👉 **Provala su [biscotti.marcozampini.it](https://biscotti.marcozampini.it/)**
 
-### `npm start`
+## Come funziona
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. Dalla home scegli una ricetta.
+2. Scrivi il peso di un qualsiasi ingrediente: quello che hai davvero, non quello della ricetta.
+3. Le quantità degli altri ingredienti si aggiornano mantenendo le proporzioni originali, arrotondate al grammo.
+4. **Reset** riporta la ricetta alle dosi di partenza.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Gli ingredienti senza peso (lievito, sale, "q. b.") restano in fondo alla ricetta e non vengono ricalcolati.
 
-### `npm test`
+## Le ricette
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Biscotti cioccolato e mirtilli
+- Biscotti alla nocciola
+- Biscotti cocco e cioccolato
+- Biscotti per le mie bambine (datteri e uvetta)
+- Gocciole
+- Gocciole di papà
+- Biscotti al sesamo
+- Pastafrolla con poco zucchero e poco burro
+- Fogassa sula gradela
+- Pasta brisée
 
-### `npm run build`
+## Aggiungere una ricetta
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Tutte le ricette stanno in [`src/recipes.json`](src/recipes.json). Per aggiungerne una basta aggiungere un oggetto all'array: la pagina e il link in home vengono creati automaticamente.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```json
+{
+  "_id": "rec-10",
+  "title": "Biscotti al limone",
+  "slug": "biscotti-al-limone",
+  "ingredients": [
+    { "_id": "ing-0", "name": "eggs", "description": "Uova", "quantity": 60 },
+    { "_id": "ing-1", "name": "flour", "description": "Farina", "quantity": 150 }
+  ],
+  "ingredientsWithoutWeight": [
+    { "_id": "ingww-0", "name": "lemon-zest", "description": "Scorza di limone", "quantity": "q. b." }
+  ]
+}
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- `_id` e `slug` devono essere unici tra tutte le ricette; lo `slug` diventa l'indirizzo della pagina (`/biscotti-al-limone`).
+- Dentro una ricetta, `_id` e `name` di ogni ingrediente devono essere unici.
+- `quantity` è in grammi ed è un numero per gli `ingredients`, un testo libero per gli `ingredientsWithoutWeight`.
 
-### `npm run eject`
+## Sviluppo
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Serve Node.js. Il progetto è basato su [Create React App](https://create-react-app.dev/) con React 19 e React Router 7.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```sh
+npm install
+npm start          # avvia l'app su http://localhost:3000
+npm test           # esegue i test
+npm run build      # crea la versione di produzione in build/
+```
